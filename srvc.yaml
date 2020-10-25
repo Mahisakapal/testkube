@@ -11,7 +11,7 @@ metadata :
 spec :
     type : NodePort 
     ports : 
-        -NodePort : 32007
+       - NodePort : 32007
          port :8080
          targetPort : 80
 
