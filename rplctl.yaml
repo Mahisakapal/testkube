@@ -1,0 +1,22 @@
+
+apiVersion : v1
+
+kind : ReplicationController
+
+metadata : 
+    name : replicactl 
+    labels:
+       appname: myapp
+
+   
+spec :
+    replicas : 3
+    template :
+      metadata : 
+        name : replicactl 
+        labels:
+          type: prodapp
+      spec : 
+        containers :
+           - name : mycontaner 
+             image : coolgourav147/nginx-custom
