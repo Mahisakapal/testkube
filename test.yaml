@@ -16,7 +16,7 @@ spec :
           value : home$ 
         - name : loc
           value : mum
-       args :["sleep","50"] 
+       args : ["sleep","50"] 
     initContainers :
      - name : myinitcontaner 
        image : coolgourav147/nginx-custom
