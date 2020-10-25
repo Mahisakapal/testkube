@@ -1,0 +1,32 @@
+
+apiVersion :  v1
+kind :  Pod
+metadata : 
+        name : myfistpod
+        labels :
+            name : test
+            
+
+spec : 
+    containers :
+     - name : mycontaner 
+       image : coolgourav147/nginx-custom
+       env:
+        - name : myenv
+          value : home$ 
+        - name : loc
+          value : mum
+       args :["sleep","50"] 
+     initcontainers :
+     - name : mycontaner 
+       image : coolgourav147/nginx-custom
+       env:
+        - name : myenvint
+          value : home$ 
+        - name : loc
+          value : mum1
+       args :["sleep","50"]      
+        
+        
+
+        
