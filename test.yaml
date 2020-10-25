@@ -25,7 +25,7 @@ spec :
           value : home$ 
         - name : loc
           value : mum1
-       args :["sleep","50"]      
+       args : ["sleep","50"]      
         
         
 
