@@ -18,7 +18,7 @@ spec :
           value : mum
        args :["sleep","50"] 
     initContainers :
-     - name : mycontaner 
+     - name : myinitcontaner 
        image : coolgourav147/nginx-custom
        env:
         - name : myenvint
