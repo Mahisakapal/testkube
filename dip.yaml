@@ -9,7 +9,7 @@ metadata :
 spec :
     replicas : 3
     minReadySeconds : 30 
-    stratgy : 
+    strategy : 
         rollingUpdate: 
             maxSurge: 0
             maxUnavailable: 1
