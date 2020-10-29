@@ -3,13 +3,17 @@ apiVersion : apps/v1
 kind : Deployment 
 
 metadata : 
-    name : mydeploymet  
+    name : replicactl 
     labels:
-       appname: myapp
-
-   
+       appname: myapp 
 spec :
     replicas : 3
+    minReadySeconds : 30 
+    stratgy : 
+        rollingUpdate: 
+            maxSurge: 0
+            maxUnavailable: 1
+        type: rollingUpdate     
     selector :
         matchLabels : 
             type : prodapp
