@@ -1,0 +1,24 @@
+apiVersion : apps/v1
+
+kind : deployment 
+
+metadata : 
+    name : mydeploymet  
+    labels:
+       appname: myapp
+
+   
+spec :
+    replicas : 3
+    selector :
+        matchLabels : 
+            type : prodapp
+    template :
+      metadata : 
+        name : replicactl 
+        labels:
+          type: prodapp        # this is service selector which we use for assing service to pod 
+      spec : 
+        containers :
+           - name : mycontaner 
+             image : coolgourav147/nginx-custom
