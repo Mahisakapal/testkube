@@ -11,4 +11,6 @@ spec :
      - name : mycontaner 
        image : coolgourav147/nginx-custom
        resources: 
-            requests : 200mi
+            requests : 
+                memory: 200mi
+            
