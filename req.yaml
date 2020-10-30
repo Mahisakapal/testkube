@@ -11,5 +11,4 @@ spec :
      - name : mycontaner 
        image : coolgourav147/nginx-custom
        resources: 
-                limits : 
-                requests : 200mi
+            requests : 200mi
