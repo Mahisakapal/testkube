@@ -12,5 +12,5 @@ spec :
        image : coolgourav147/nginx-custom
        resources: 
             requests : 
-                memory: 200mi
+                memory: 200M
             
