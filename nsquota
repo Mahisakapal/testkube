@@ -1,0 +1,7 @@
+apiVersion : v1 
+kind : ResourceQuota
+metadata : 
+    name : myquota 
+spec:
+  hard :
+    pods : 2   # we can difinde any and instaed of 2 u can give number for what you want  
