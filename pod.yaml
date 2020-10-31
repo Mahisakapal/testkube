@@ -3,7 +3,7 @@ kind :  Pod
 metadata : 
         name : myfistpod
         labels :
-            name : test
+            name : myfistpod
             
 
 spec : 
